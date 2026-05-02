@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: rinmaytales
+    runtime: static
+    buildCommand: npm install && npm run build
+    publishPath: dist
+    envVars:
+      - key: NODE_VERSION
+        value: 20
